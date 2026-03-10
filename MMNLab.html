@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MMNLab</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="home.html">MMNLab</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>              
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="advisor.html">Advisor</a></li>
+                <li class="nav-item"><a class="nav-link" href="research.html">Research Interests</a></li>
+                <li class="nav-item"><a class="nav-link" href="plan.html">Grants</a></li>
+                <li class="nav-item"><a class="nav-link" href="publication.html">Publication List</a></li>
+                <li class="nav-item"><a class="nav-link" href="course.html">Courses</a></li>
+            </ul>
+            <div class="btn-group" role="group">
+                <a type="button" class="btn btn-secondary" href="ch/home.html">繁中</a>
+                <a type="button" class="btn btn-secondary active" href="#">En</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center" style="padding-top: 75px;">
+        <h3><img src="images/new.gif">News: 2026/碩博班研究領域與主題(<a href="files/2026年8月-碩博班研究領域與主題.doc">here</a>)(碩士班: 4人,博士班:無限制)</h3>
+        <h3><img src="images/new.gif">News: 2022年9月大學部專題題目(<a href="files/大學部專題題目-2022.doc">here</a>)(學士班: 2人(Android) + 2人(Ios))</h3>
+        <h4><img src="images/new.gif">若新生有任何問題(問實驗室)，歡迎聯絡 古孝正 研究生(信箱:guxc@locust.csie.ncku.edu.tw)</h4>
+        <h4><font color="gray"><span id="a"></span></font></h4>
+        
+        <script>
+        const dateObject = new Date();
+        const month = dateObject.getMonth();
+        const dateObject1 = new Date();
+        const date = dateObject1.getDate();
+        var x = month + 1;
+        var a = "碩士新生仍可招收名額(4人 更新日期" + x + "月" + date + "日)";
+        document.getElementById('a').textContent = a;
+        </script>
+        
+        <img style="margin-top: 100px;" src="images/welcome.gif">
+        <br><br>
+        <h6><a href="http://deh.csie.ncku.edu.tw/">文史脈流台灣古蹟行動導覽服務平台</a></h6>
+    </div>
+</body>
+</html>
